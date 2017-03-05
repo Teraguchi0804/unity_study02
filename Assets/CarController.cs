@@ -28,6 +28,9 @@ public class CarController : MonoBehaviour
 
 	        //スワイプの長さを初速度に変換する
 	        this.speed = swipeLength / 800.0f;
+
+	        //効果音再生(追加)
+	        GetComponent<AudioSource>().Play();
 	    }
 
 	    transform.Translate(this.speed, 0, 0); //移動
